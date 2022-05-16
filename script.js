@@ -44,7 +44,7 @@ function startMenuManager(err, result){
 
 function insertBook() {
 
-  prompt.start();
+  // prompt.start();
 
   const schema = {
     properties: {
