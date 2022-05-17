@@ -223,10 +223,12 @@ function insertMagazine() {
         description: 'inserisci il numero di copie',
       },
       discount: {
-        description: 'inserisci lo sconto'
+        description: 'inserisci la percentuale sconto'
       }
     }
   };
+
+
 
   prompt.get(schema, insertMagazineManger);
 
