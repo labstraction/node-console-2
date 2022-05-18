@@ -132,5 +132,17 @@ class Magazine extends Publication {
 
 }
 
+
+function pubblicationFactory(obj){
+
+  if (obj.author) {
+    return new Book(obj.title, obj.author, obj.publisher, obj.type, obj.price, obj.copies, obj.pages, obj.yop, obj.discount);
+  } else {
+    return new Magazine(obj.title, obj.pubString, obj.release, obj.periodicy, obj.type, obj.price, obj.copies, obj.discount, new Date(obj._releaseDate));
+  }
+
+}
+
 exports.Book = Book;
 exports.Magazine = Magazine;
+exports.pubblicationFactory = pubblicationFactory;
